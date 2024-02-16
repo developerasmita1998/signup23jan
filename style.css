@@ -1,0 +1,41 @@
+body{
+    background: url("/1.jpg");
+    background-size: cover;
+}   
+
+
+.outer-box{
+
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.inner-box{
+    background-color:white;
+    text-align: center;
+      
+}
+.signup{
+margin: 10px;
+text-align: center;
+}
+.signup-button{
+  background-color: blue;
+  color: white;
+  border-radius: 30px; 
+  padding: 8px;
+  width: 190px;
+  padding-top: 3px;
+  padding-bottom: 3px; 
+}
+.connect-button{
+    background-color: lightblue;
+    color: white;
+    border-radius: 30px; 
+    padding: 8px;
+    width: 190px;
+    padding-top: 3px;
+    padding-bottom: 3px
+}

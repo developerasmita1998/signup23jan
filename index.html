@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   
+        
+</head>
+<body>
+    <script>
+         function facebookclick(){
+            alert("This is facebook click!")
+         }
+        
+       
+        function validate(){
+          var name = document.getElementById("fullname").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        var confirm = document.getElementById("confirm").value;
+
+name=name.trim()
+email=email.trim()
+password=password.trim()
+confirm=confirm.trim()
+
+          if(name=="" ||email=="" ||password=="" ||confirm=="")
+          {
+            
+            if(name=="" && email=="" && password=="" && confirm==""){
+              alert("All fields are required")
+              return false
+            }
+            if(name==""){
+              alert("please enter name")
+              return false
+            }
+
+            if(email==""){
+              alert("please enter email")
+              return false
+            }
+            
+            if(password==""){
+              alert("please enter password")
+              return false
+            }
+            
+            if(confirm==""){
+              alert("please enter confirm password")
+              return false
+            }
+            
+            
+          }
+          else
+            {
+              if(password !== confirm){
+              alert("please fill same password")
+              return false
+               
+            }
+            else{
+              alert("all good");
+             return true
+            }
+             
+          }
+        }
+
+
+        </script>
+        
+    <div class="outer-box"> 
+       <div class="inner-box">
+          <div >
+            <fieldset>
+                <form>
+                  <p>
+                    <label for="full name">Full Name</label>
+                    <input type="text" id="fullname" placeholder="Full Name">
+                  </p> 
+                  <p>
+                    <label for="Email ID">Email ID</label>
+                    <input type="email" id="email" placeholder="Email ID">
+                  </p>
+                  <p>
+                    <label for="Password">Password</label>
+                    <input type="password" id="password" placeholder="Password">
+                  </p>  
+                  <p>
+                    <label for="Confirm Password">Confirm Password</label>
+                    <input type="password" id="confirm" placeholder="Confirm Password">
+                  </p>  
+                   
+                    
+                 <div class="signup">
+                    <button class="signup-button" onclick="return validate()">Signup</button>
+                </div>
+                    
+                <br><br>
+                <div>
+                  <button class="connect-button" onclick="facebookclick()">connect with facebook</button>
+                  </div>  
+                
+
+                     
+                </form>
+            </fieldset>
+          </div>  
+       </div>
+    </div>
+</body>
+</html>
